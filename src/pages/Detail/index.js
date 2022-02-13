@@ -11,8 +11,8 @@ import Footer from '../../component/Footer';
 
 const Detail = ({navigation}) => {
      const {shoe} = useContext(StoreContext)
-     //const [tamanhoClicado, setTamanhoClicado] = useState(0)
-    console.log(shoe)
+     const [tamanhoClicado, setTamanhoClicado] = useState(0)
+   
 
    useEffect(()=>{
 
@@ -39,11 +39,11 @@ const Detail = ({navigation}) => {
                </View>
                <View style={{flexDirection : 'row', width : '100%'}}>
                  <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                         <SizeButton tamanho = '39' bgColor ='#17181a' color='#FFF'  />
-                         <SizeButton tamanho = '40' bgColor ='#17181a' color='#FFF'    />
-                         <SizeButton tamanho = '42' bgColor ='#17181a' color='#FFF'  />
-                         <SizeButton tamanho = '43' bgColor ='#17181a' color='#FFF'/>
-                         <SizeButton tamanho = '44' bgColor ='#17181a' color='#FFF'    />
+                         <SizeButton tamanho = '39' bgColor ='#17181a' color='#FFF' onClick={() => setTamanhoClicado(39)} tamanhoClicado={tamanhoClicado}/>
+                         <SizeButton tamanho = '40' bgColor ='#17181a' color='#FFF' onClick={() => setTamanhoClicado(40)} tamanhoClicado={tamanhoClicado}   />
+                         <SizeButton tamanho = '42' bgColor ='#17181a' color='#FFF' onClick={() => setTamanhoClicado(42)} tamanhoClicado={tamanhoClicado} />
+                         <SizeButton tamanho = '43' bgColor ='#17181a' color='#FFF' onClick={() => setTamanhoClicado(43)} tamanhoClicado={tamanhoClicado}/>
+                         <SizeButton tamanho = '44' bgColor ='#17181a' color='#FFF'  onClick={() => setTamanhoClicado(44)} tamanhoClicado={tamanhoClicado} />
                  </ScrollView> 
                </View>
                <View style={styles.textContent}>

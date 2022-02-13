@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 export default function  Home () {
-  console.log(styles)
+ 
   return(
     <View  style={styles.container}>
         <View style={styles.header}>
@@ -35,12 +35,12 @@ export default function  Home () {
                     <Shoes  img={require('../../assets/2.png')} cost="R$170,90" text ='Nike Alguma coisa'/>
                </View>
                <View style={{flexDirection : 'row', justifyContent : 'space-around'}}>
-                    <Shoes  img={require('../../assets/3.png')} cost="R$140,90" text ='Nike Downshifter 10'/>
-                    <Shoes  img={require('../../assets/4.png')} cost="R$170,90" text ='Nike Alguma coisa'/>
+                    <Shoes  img={require('../../assets/3.png')} cost="R$140,90" text ='Nike Downshifter 20'/>
+                    <Shoes  img={require('../../assets/4.png')} cost="R$170,90" text ='Nike top'/>
                </View>
                <View style={{flexDirection : 'row', justifyContent : 'space-around'}}>
-                    <Shoes  img={require('../../assets/3.png')} cost="R$140,90" text ='Nike Downshifter 10'/>
-                    <Shoes  img={require('../../assets/4.png')} cost="R$170,90" text ='Nike Alguma coisa'/>
+                    <Shoes  img={require('../../assets/5.png')} cost="R$140,90" text ='Nike Downshifter 30'/>
+                    <Shoes  img={require('../../assets/6.png')} cost="R$170,90" text ='Nike Show'/>
                </View>
            </ScrollView>
     
